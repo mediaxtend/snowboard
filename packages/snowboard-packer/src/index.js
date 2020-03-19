@@ -208,11 +208,11 @@ function moduleDirs(templateDir) {
   const { _where: installDir } = require("../package.json");
 
   if (installDir) {
-    return [resolve(installDir, "node_modules")];
+    return [resolve(installDir, "../../node_modules")];
   }
 
   return [
-    resolve(__dirname, "../node_modules"),
+    resolve(__dirname, "../../../node_modules"),
     resolve(templateDir, "../node_modules"),
     resolve(templateDir, "../../snowboard-theme-helper/node_modules")
   ];
